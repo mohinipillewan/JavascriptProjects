@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var score = parseInt(prompt("Enter a student's score (0-100):"));
+
+        if (score >= 90 && score <= 100) {
+            alert("Grade: A");
+        } else if (score >= 80 && score <= 89) {
+            alert("Grade: B");
+        } else if (score >= 70 && score <= 79) {
+            alert("Grade: C");
+        } else if (score >= 60 && score <= 69) {
+            alert("Grade: D");
+        } else if (score >= 0 && score < 60) {
+            alert("Grade: F");
+        } else {
+            alert("Invalid score entered. Please enter a score between 0 and 100.");
+        }
+
+    </script>
+   
+
+</body>
+</html>

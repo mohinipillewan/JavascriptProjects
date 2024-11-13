@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Actors</title>
+    <style>
+        button {
+            margin: 5px;
+            padding: 10px;
+            color:rgb(246, 232, 252);
+            background-color: rgb(195, 115, 241);
+        }
+        img {
+            margin-top: 20px;
+            width: 300px;
+            height: auto;
+            display: block;
+        }
+        .info {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>My Favorite Actors</h2>
+
+
+<button onclick="showKimSejeong()">Kim Sejeong</button>
+<button onclick="showAhnHyoSeop()">Ahn Hyo-seop</button>
+<button onclick="showKimMinKyu()">Kim Min-kyu</button>
+
+
+<img id="actorImage" src="" alt="Actor Image" style="display: none;">
+<div id="actorInfo" class="info" style="display: none;"></div>
+
+<script>
+    function showKimSejeong() {
+        var img = document.getElementById("actorImage");
+        var inf = document.getElementById("actorInfo");
+        img.src = "https://6.soompi.io/wp-content/uploads/image/1afdaa72b80145abbc9c8e1529f59fa5/dummy.jpeg?s=900x600&e=t";
+        img.style.display = "block";
+        inf.innerHTML = "Kim Sejeong is a South Korean singer and actress, known for her roles in 'School 2017' and as a member of the girl group I.O.I.";
+        inf.style.display = "block";
+    }
+
+    function showAhnHyoSeop() {
+        var img = document.getElementById("actorImage");
+        var inf = document.getElementById("actorInfo");
+        img.src = "https://ss-images.saostar.vn/pc/1652176027063/saostar-xzu3tj845z99fa4y.jpg";
+        img.style.display = "block";
+        inf.innerHTML = "Ahn Hyo-seop is a South Korean actor and singer, best known for his roles in 'Abyss' and 'Dr. Romantic 2'.";
+        inf.style.display = "block";
+    }
+
+    function showKimMinKyu() {
+        var img = document.getElementById("actorImage");
+        var inf = document.getElementById("actorInfo");
+        img.src = "https://external-preview.redd.it/kim-min-kyu-signs-with-newly-established-agency-v0-8Ich-u9OHyQ4Z9AJo1XlD8uZyOf-BXBsE2t7_NJ4LXI.jpg?auto=webp&s=bbd63eb11ff9dee0fb99d635b205a00028e075d8";
+        img.style.display = "block";
+        inf.innerHTML = "Kim Min-kyu is a South Korean actor, known for his work in 'Queen: Love and War' and 'Backstreet Rookie'.";
+        inf.style.display = "block";
+    }
+</script>
+
+</body>
+</html>
